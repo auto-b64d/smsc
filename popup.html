@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			body {
+				position: relative;
+			}
+			body:hover::before {
+				content: '클릭으로 내용 복사';
+				position: absolute;
+				color: white;
+				background-color: rgb(from black r g b / 0.75);
+			}
+			body[data-copied]:hover::before {
+				content: '클릭으로 내용 복사 \2713';
+				color: lightgreen;
+			}
+		</style>
+		<script defer type="module" src="dist/popup.mjs"></script>
+	</head>
+	<body></body>
+</html>
